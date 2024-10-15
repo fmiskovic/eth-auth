@@ -90,6 +90,10 @@ func (h handler) handleAuth(w http.ResponseWriter, r *http.Request) error {
 
 // recoverAddressFromSignature verifies the signature and returns the signer's address
 func (h handler) recoverAddressFromSignature(nonce, signature string) (string, error) {
+	if len(signature) != 132 { // 65 bytes in hexadecimal form (2 characters per byte) + '0x' prefix
+		return "", errors.New("invalid signature")
+	}
+
 	// add the ethereum personal message prefix
 	messageHash := crypto.Keccak256Hash([]byte("\x19Ethereum Signed Message:\n" + fmt.Sprint(len(nonce)) + nonce))
 

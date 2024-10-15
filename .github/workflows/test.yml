@@ -31,3 +31,6 @@ jobs:
 
     - name: Vet
       run: go vet ./...
+
+    - name: Test
+      run: go test -vet=off -count=1 -race -timeout=30s ./...

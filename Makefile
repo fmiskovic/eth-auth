@@ -13,6 +13,11 @@ run:
 	@go mod tidy
 	@go run main.go
 
+.PHONY: test
+test:
+	@echo "=== Running tests with race detector"
+	go test -vet=off -count=1 -race -timeout=30s ./...
+
 .PHONY: clean
 clean:
 	@echo "=== Cleaning $(PROJECT_NAME)..."

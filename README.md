@@ -1,4 +1,10 @@
-#  Showcase of Go Service Authentication with MetaMask
+![go workflow](https://github.com/fmiskovic/eth-auth/actions/workflows/test.yml/badge.svg)
+![lint workflow](https://github.com/fmiskovic/eth-auth/actions/workflows/lint.yml/badge.svg)
+![lint workflow](https://github.com/fmiskovic/eth-auth/actions/workflows/release.yml/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/fmiskovic/eth-auth)](https://goreportcard.com/report/github.com/fmiskovic/eth-auth)
+
+
+#  Demo of MetaMask Authentication in Go
 
 This project demonstrates how to authenticate users with MetaMask, Phantom or any other browser wallet that supports Ethereum network.
 It provides a simple web interface that allows users to connect their MetaMask wallet and display their Ethereum address.
