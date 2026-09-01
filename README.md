@@ -1,6 +1,8 @@
+
+
 ![go workflow](https://github.com/fmiskovic/eth-auth/actions/workflows/test.yml/badge.svg)
 ![lint workflow](https://github.com/fmiskovic/eth-auth/actions/workflows/lint.yml/badge.svg)
-![lint workflow](https://github.com/fmiskovic/eth-auth/actions/workflows/release.yml/badge.svg)
+![release workflow](https://github.com/fmiskovic/eth-auth/actions/workflows/release.yml/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/github.com/fmiskovic/eth-auth)](https://goreportcard.com/report/github.com/fmiskovic/eth-auth)
 
 
@@ -88,6 +90,7 @@ This Go service integrates MetaMask authentication using the Ethereum blockchain
 │   │── handler_auth.go     # Request handlers for the authentication
 │   └── handler_nonce.go    # Request handlers for the nonce generation
 ├── logging                     
+
 │   └── logging.go          # Logger used across the application   
 ├── server
 │   └── server.go           # Server configuration and initialization          
